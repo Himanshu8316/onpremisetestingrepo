@@ -8,10 +8,11 @@ Suite Teardown        Close All Browsers
 
 *** Variables ***
 ${browser}            chrome
-${username}           hsharma+1008202402@copado.com.dev1-sfp
-${password}           crttest1234
-${login_url}          https://speed-ruby-12652.scratch.my.salesforce.com/
-${MY_SECRET}          6WPDNQX3XNRVO432MYPCF53XPPUAXKZE
+${username}           hsharma14112024@copado.com.dev1
+${password}           testcrt1234
+${login_url}          https://app-site-9017.scratch.lightning.force.com/
+# ${MY_SECRET}          6WPDNQX3XNRVO432MYPCF53XPPUAXKZE
+
 *** Test Cases ***
 Login to Salesforce
     GoTo              ${login_url}
