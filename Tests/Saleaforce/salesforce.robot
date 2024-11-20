@@ -1,5 +1,4 @@
 *** Settings ***
-
 Documentation         New test suite
 Library               QForce
 Library               QWeb
@@ -16,7 +15,6 @@ ${login_url}          https://app-site-9017.scratch.lightning.force.com/
 *** Test Cases ***
 Login to Salesforce
     GoTo              ${login_url}
-
     VerifyText        Username
     TypeText          Username                    ${username}
     TypeSecret        Password                    ${password}
