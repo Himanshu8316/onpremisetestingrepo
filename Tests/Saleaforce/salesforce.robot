@@ -21,13 +21,13 @@ Login to Salesforce
     TypeSecret        Password                    ${password}
     ClickText         Log In to Sandbox
 
-    ${MFA_needed}=    Run Keyword And Return Status                      Should Not Be Equal             ${None}    ${MY_SECRET}
-    Log To Console    ${MFA_needed} # When given ${MFA_needed} is true, see Log to Console keyword result
-    IF                ${MFA_needed}
-        ${mfa_code}=                              GetOTP                 ${username}     ${MY_SECRET}
-        TypeSecret    Verification Code           ${mfa_code}
-        ClickText     Verify
-    END
+    # ${MFA_needed}=    Run Keyword And Return Status                      Should Not Be Equal             ${None}    ${MY_SECRET}
+    # Log To Console    ${MFA_needed} # When given ${MFA_needed} is true, see Log to Console keyword result
+    # IF                ${MFA_needed}
+    #     ${mfa_code}=                              GetOTP                 ${username}     ${MY_SECRET}
+    #     TypeSecret    Verification Code           ${mfa_code}
+    #     ClickText     Verify
+    # END
     VerifyText        Seller Home
 
 Logout
