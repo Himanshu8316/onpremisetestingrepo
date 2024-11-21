@@ -10,7 +10,7 @@ ${browser}            chrome
 ${username}           hsharma14112024@copado.com.dev1
 ${password}           testcrt1234
 ${login_url}          https://app-site-9017.scratch.lightning.force.com/
-# ${MY_SECRET}          6WPDNQX3XNRVO432MYPCF53XPPUAXKZE
+${MY_SECRET}          XKYL5J6KYXMJBTKHAUIAB5P5REDOGIC4
 
 *** Test Cases ***
 Login to Salesforce
